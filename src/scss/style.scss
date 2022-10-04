@@ -1,0 +1,26 @@
+@import "../scss/base/reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import "../scss/base/media-requests.scss";
+@import "../scss/base/adaptive-property.scss";
+@import "../scss/base/global.scss";
+// Basic structure of the document
+@import "../scss/header.scss";
+@import "../scss/main-page.scss";
+@import "../scss/footer.scss";
+
+//---Center Image---
+
+// position: absolute;
+// top: 50%;
+// left: 50%;
+// margin-right: -50%;
+// transform: translate(-50%, -50%);
+// background: url("@img") 50% 50%/cover no-repeat;
+
+
+//---Discoloration---
+
+// text{
+//   color: darken(#fff, 25%);
+//   color: lighten(#000, 25%);
+// }

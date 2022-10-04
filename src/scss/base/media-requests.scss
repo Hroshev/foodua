@@ -1,0 +1,35 @@
+// @include phone{
+//   font-size: 18px;
+// }
+
+$mq-xxl: 1440px !default;
+$mq-xl: 1200px !default;
+$mq-lg: 992px !default;
+$mq-md: 768px !default;
+$mq-sm: 576px !default;
+
+@mixin desktop {
+  @media (max-width: $mq-xxl) {
+    @content;
+  }
+}
+@mixin desktop-min {
+  @media (max-width: $mq-xl) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $mq-lg) {
+    @content;
+  }
+}
+@mixin tablet-min {
+  @media (max-width: $mq-md) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: $mq-sm) {
+    @content;
+  }
+}

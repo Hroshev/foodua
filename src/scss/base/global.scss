@@ -1,0 +1,37 @@
+//*Text color
+$first-color: #fff;
+$second-color: #070506;
+
+body {
+  font-size: 32px;
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $first-color;
+  background-color: #f3f3f3;
+}
+
+[class*="__container"] {
+  width: 100%;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 72px;
+  @include tablet-min {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+.logo {
+  width: 165px !important;
+  height: 80px !important;
+  @include tablet-min {
+    width: 90px !important;
+    height: 50px !important;
+  }
+}
