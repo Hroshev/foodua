@@ -1,4 +1,6 @@
 import "./modules/burger.js";
+import "./modules/regularExpressions.js";
+import "./modules/PostOffice.js"
 
 // import "./modules/regularExpressions.js";
 // import "./modules/popup.js";

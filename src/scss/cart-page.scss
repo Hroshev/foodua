@@ -1,24 +1,5 @@
 .header-cart {
-    padding: 25px 0px 87px 0px;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
-        @include tablet-min {
-            justify-content: center;
-            flex-direction: column;
-        }
-    }
-    &__contact{
-        @include tablet-min {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
+    padding: 95px 0px 87px 0px;
     &__phone {
         color: #282828;
         @include tablet-min {
@@ -44,21 +25,131 @@
             opacity: 0.7;
         }
     }
-    &__logo{
-        @include tablet-min {
-            display: none;
-        }
-    }
-    &__logo-img {
-        width: 100%;
-        max-width: 120px;
-        height: auto;
-    }
-    &__scrollTo {
-        font-size: 28px;
-        max-width: 250px;
+}
+.basket {
+    padding-bottom: 80px;
+    &__title {
+        margin-bottom: 20px;
+        color: #282828;
         @include tablet-min {
             font-size: 24px;
+        }
+    }
+    &__form {
+        width: 100%;
+        max-width: 500px;
+    }
+    &__form-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        color: #555;
+        background-color: #dbdbdb70;
+    }
+    &__form-inner {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+        @include phone {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        input {
+            padding: 8px 20px;
+            font-size: 18px;
+            width: 100%;
+            color: #727272;
+            background-color: #ece8e8;
+            border: 1px solid rgb(194, 192, 192);
+            &:focus {
+                background-color: #fafafa;
+                border: 1px solid rgb(126, 126, 126);
+            }
+        }
+    }
+    &__form-radio {
+        flex: 1 1 auto;
+    }
+    &__real-radio {
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    &__custome-radio {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #7e9bbd;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 8px;
+            height: 8px;
+            background-color: #ffc10b;
+            border-radius: 50%;
+            transition: .2s ease-in;
+        }
+    }
+    &__real-radio:checked + &__custome-radio::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &__form-lable {
+        width: 160px;
+        font-size: 18px;
+        color: #666;
+        @include phone {
+            width: 100%;
+        }
+        &.required-field::after {
+            content: "*";
+            color: #e02b27;
+            font-size: 1.2rem;
+            margin: 0 0 0 0.35rem;
+        }
+    }
+    &__form-textarea{
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        height: 130px;
+        color: #727272;
+        overflow: auto;
+        resize: vertical;
+        background-clip: padding-box;
+        background-color: #ece8e8;
+        border: 1px solid rgb(194, 192, 192);
+        &:focus {
+            background-color: #fafafa;
+            border: 1px solid rgb(126, 126, 126);
+        }
+    }
+    &__form-button {
+        padding: 16px 20px;
+        font-size: 26px;
+        width: 100%;
+        max-width: 320px;
+        color: $second-color;
+        background-color: #ffc10b;
+        border-radius: 36px;
+        text-align: center;
+        transition: background-color 0.2s linear;
+        &:hover {
+            background-color: darken(#ffc10b, 25%);
+        }
+        &:focus {
+            background-color: #ffc10b;
         }
     }
 }
