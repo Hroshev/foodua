@@ -35,3 +35,52 @@ body {
     height: 50px !important;
   }
 }
+
+.cart {
+  position: relative;
+  padding: 10px 10px 10px 40px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+  border-radius: 36px;
+  color: $second-color;
+  background-color: #ffc10b;
+  transition: background-color 0.2s linear;
+  z-index: 5;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 15%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: url("@img/cart/cart.svg") 50% 50% / cover no-repeat;
+  }
+  &:hover {
+    background-color: darken(#ffc10b, 25%);
+  }
+  &:focus {
+    background-color: #ffc10b;
+  }
+}
+
+.button {
+  padding: 16px 40px;
+  font-size: 28px;
+  width: 100%;
+  max-width: 230px;
+  color: $second-color;
+  background-color: #FFC10B;
+  border-radius: 36px;
+  text-align: center;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: darken(#FFC10B, 25%);
+  }
+  &:focus {
+    background-color: #FFC10B;
+  }
+}

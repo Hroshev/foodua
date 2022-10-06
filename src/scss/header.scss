@@ -24,6 +24,15 @@ $burger__mobile__background__menu__open: #1b3c2a;
     }
 }
 .menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    @include tablet-min {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
     &__icon {
         display: none;
         @include tablet-min {

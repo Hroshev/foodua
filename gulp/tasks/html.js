@@ -12,14 +12,14 @@ export const html = () => {
 			}))
 		)
 		.pipe(fileInclude())
-		/*
-		.pipe(pug({
+		
+/* 		.pipe(pug({
 			// Cжатие HTML файла
 			pretty: true,
 			// Показывать в терминале какой файл обработан
 			verbose: true
 		}))
-		*/
+ */
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
 
 		//#Создание тега picture вместо img
@@ -40,6 +40,7 @@ export const html = () => {
 						'to': [
 							'css',
 							'js',
+							'img',
 						]
 					},
 					'output': {
