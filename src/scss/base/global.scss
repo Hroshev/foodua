@@ -48,6 +48,9 @@ body {
   background-color: #ffc10b;
   transition: background-color 0.2s linear;
   z-index: 5;
+  @include phone {
+    font-size: 18px;
+}
   &::before {
     position: absolute;
     content: "";
