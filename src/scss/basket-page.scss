@@ -48,12 +48,13 @@
         }
     }
     &__form {
+        display: none;
         width: 100%;
         max-width: 500px;
     }
     &__form-title {
         font-size: 20px;
-        margin-bottom: 20px;
+        margin: 10px 0px 5px;
         padding: 10px 15px;
         color: #555;
         background-color: #dbdbdb70;
@@ -168,7 +169,7 @@
         position: sticky;
         top: 90px;
         width: 100%;
-        max-width: 380px;
+        max-width: 350px;
         padding: 14px;
         border: 1px solid rgba(0, 0, 0, 0.4);
         background-color: #fff;
@@ -180,7 +181,7 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: space-evenly;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
     }
     &__products-image {
@@ -188,8 +189,10 @@
         max-width: 120px;
         height: auto;
     }
+    &__products-content {
+        width: 100%;
+    }
     &__products-name {
-        margin-bottom: 8px;
         font-size: 18px;
         color: #666;
         @include phone {
@@ -197,11 +200,11 @@
         }
     }
     &__products-info {
-        margin-bottom: 5px;
+        margin: 2px 0px 8px 0px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 10px;
+        gap: 25px;
     }
     &__products-grams {
         font-size: 16px;
@@ -222,7 +225,6 @@
         }
     }
     &__products-counter {
-        margin-top: 10px;
         font-size: 24px;
         display: flex;
         justify-content: space-between;
@@ -236,26 +238,25 @@
         font-size: inherit;
         color: inherit;
         cursor: pointer;
+        background-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
     }
     &__products-current {
         font-size: 20px;
         color: inherit;
     }
-    &__products-dele {
-        max-height: 0px;
-        position: relative;
-        color: transparent;
-        &::before{
-            position: absolute;
-            content: "⮾";
-            top: -5px;
-            right: -10px;
-            max-height: 25px;
-            max-width: 25px;
-            font-size: 26px;
-            cursor: pointer;
-            color: #e02b27;
-        }
+    &__products-empty {
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #282828;
+    }
+    &__shipping-inner {
+        display: none;
     }
     hr {
         margin-bottom: 15px;
@@ -286,6 +287,9 @@
             font-size: 16px;
         }
     }
+    &__shipping-free {
+        color: green;
+    }
     &__products-result {
         font-size: 20px;
         letter-spacing: 0.04em;
@@ -298,7 +302,7 @@
         position: relative;
         font-size: 18px;
         letter-spacing: 0.04em;
-        color: red;
+        color: #28282899;
         @include phone {
             font-size: 16px;
         }

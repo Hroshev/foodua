@@ -140,5 +140,39 @@ $burger__mobile__background__menu__open: #1b3c2a;
             color: darken($burger__menu__link__color, 25%);
         }
     }
+    &__cart {
+        display: none;
+        position: relative;
+        padding: 10px 10px 10px 30px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 180px;
+        text-align: center;
+        border-radius: 36px;
+        color: $second-color;
+        background-color: #ffc10b;
+        transition: background-color 0.2s linear;
+        z-index: 5;
+        @include phone {
+          font-size: 18px;
+      }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 20px;
+          top: 50%;
+          left: 15%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          background: url("@img/cart/cart.svg") 50% 50% / cover no-repeat;
+        }
+        &:hover {
+          background-color: darken(#ffc10b, 25%);
+        }
+        &:focus {
+          background-color: #ffc10b;
+        }
+      }
 }
 /* //Burger menu */
