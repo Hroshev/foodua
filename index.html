@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ua">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+	<meta name="author" content="Hroshev Ivan (grosheff.ivan@gmail.com)">
+	<meta name="description" content="This site was created by Hroshev Ivan">
+	<title>Food</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+	<body class="popup__wrapper">
+		<!-- Burger menu -->
+<div class="burger">
+    <div class="burger__container">
+        <a href="#" class="burger__logo" onclick="event.preventDefault()">
+            <img class="logo" src="img/logo.svg" alt="Logo">
+        </a>
+        <div class="burger__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a data-goto=".features__chips" href="/#features__chips" class="menu__link">snaXtime</a></li>
+                    <li><a data-goto=".features__peanut-butter" href="/#features__peanut-butter" class="menu__link">Просто Паста</a></li>
+                </ul>
+            </nav>
+            <a class="menu__cart popup-link" href="#basket"></a>
+        </div>
+    </div>
+</div>
+<!-- //Burger menu --> 
+		<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <img class="logo header__logo-img" src="img/logo.svg" alt="logo">
+        </div>
+        <h1 class="title header__title">Індустрія органічної їжі</h1>
+        <p class="header__subtitle">Виробляємо на 100% натуральні снеки для будь-якого способу життя для будь-якого способу життя</p>
+    </div>
+</header>
+		<main>
+			<section class="promo">
+    <div class="promo__container">
+        <div class="promo__logo">
+            <img class="promo__logo-img" src="img/snaxtime.png" alt="snaXtime">
+        </div>
+        <div class="promo__inner">
+            <div class="promo__content">
+                <h2 class="title promo__content-title">Правильні снеки <br> Для чітких пацанів!</h2>
+                <p class="promo__content-text">Виробляємо на 100% натуральні снеки для будь-якого способу життя</p>
+            </div>
+            <div class="promo__image">
+                <img src="img/snacks.png" alt="snacks">
+            </div>
+        </div>
+        <ul class="promo__social">
+            <li><a target="_blank" href="https://www.instagram.com/"><img class="promo__social-img" src="img/icons/icons.svg#instagram-white" alt="instagram"></a></li>
+            <li><a target="_blank" href="https://web.telegram.org/"><img class="promo__social-img" src="img/icons/icons.svg#telegram-white" alt="telegram"></a></li>
+            <li><a target="_blank" href="https://www.viber.com/"><img class="promo__social-img" src="img/icons/icons.svg#viber-white" alt="viber"></a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="features__chips" class="features__chips features">
+    <div class="features__container">
+        <h2 class="features__title">Фрукти</h2>
+        <div class="features__inner">
+
+            <div class="features__box" data-id="01">
+                <img class="features__box-img" src="img/snaxtime/penut-butter__apple.png" alt="product">
+                <h3 class="features__box__title">Яблучнi чiпси Хрусткi</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">250г</p>
+                    <h5 class="features__box-price">66</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="02">
+                <img class="features__box-img" src="img/snaxtime/penut-butter__banana.png" alt="product">
+                <h3 class="features__box__title">Банановi чiпси Класичнi</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">100г</p>
+                    <h5 class="features__box-price">84</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="01">
+                <img class="features__box-img" src="img/snaxtime/penut-butter__apple.png" alt="product">
+                <h3 class="features__box__title">Яблучнi чiпси Хрусткi</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">250г</p>
+                    <h5 class="features__box-price">66</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+            
+        </div>
+        <h2 class="features__title-second">Курочка</h2>
+        <p class="features__subtitle">Виробляємо на 100% натуральні снеки для будь-якого способу життя</p>
+        <div class="features__inner">
+
+            <div class="features__box"  data-id="03">
+                <img class="features__box-img" src="img/snaxtime/snac__chiken1.png" alt="product">
+                <h3 class="features__box__title">Курячi палички з паприкою та чилi</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">30г</p>
+                    <h5 class="features__box-price">42</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="04">
+                <img class="features__box-img" src="img/snaxtime/snac__chiken2.png" alt="product">
+                <h3 class="features__box__title">Курячi палички з медом i гірчицею</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">40г</p>
+                    <h5 class="features__box-price">56</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="03">
+                <img class="features__box-img" src="img/snaxtime/snac__chiken1.png" alt="product">
+                <h3 class="features__box__title">Курячi палички з паприкою та чилi</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">30г</p>
+                    <h5 class="features__box-price">42</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="04">
+                <img class="features__box-img" src="img/snaxtime/snac__chiken2.png" alt="product">
+                <h3 class="features__box__title">Курячi палички з медом i гірчицею</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">40г</p>
+                    <h5 class="features__box-price">56</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="benefits__container">
+        <div class="benefits__content">
+            <h3 class="benefits__text">Ми потрясли фермерські угіддя нашої країни та відібрали найкращі фрукти. Для любителів м'яса - готуємо палички без оболонки з чистого фаршу філе та свіжомелених спецій. Наші продукти не містять жодних добавок. Тільки натуральний склад.</h3>
+            <ul class="benefits__list">
+                <li class="benefits__list-item">Курячі палички приготовані з чистого філе, без добавок і консервантів (немає жиру).</li>
+                <li class="benefits__list-item">У 100г курочки - аж 300г м'яса - дуже легко наїсться (м'ясо висушене мінімум у 3 рази).</li>
+                <li class="benefits__list-item">Зручно навіть для дітей. Оскільки в процесі створення не використовується м'ясна оболонка.</li>
+                <li class="benefits__list-item">Фрукти ми висушуємо у 8-10 разів. В одній упаковці яблук на 100г - насправді аж кілограм свіжих яблук.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="commercial">
+    <div class="commercial__circle"></div>
+    <div class="commercia__container">
+        <div class="commercial__title">
+            <img class="commercial__title-img" src="img/peanut-butter__text.png" alt="title">
+        </div>
+        <h2 class="title commercial__sub-title">Правильна їжа для правильних людей</h2>
+        <p class="commercial__text">Виробляємо на 100% натуральні снеки для будь-якого способу життя для будь-якого способу життя</p>
+        <div class="commercial__image">
+            <img class="commercial__image-photo" src="img/peanut-butter.png" alt="peanut butter">
+        </div>
+        <ul class="commercial__social">
+            <li><a target="_blank" href="https://www.instagram.com/"><img class="commercial__social-img" src="img/icons/icons.svg#instagram-black" alt="instagram"></a></li>
+            <li><a target="_blank" href="https://web.telegram.org/"><img class="commercial__social-img" src="img/icons/icons.svg#telegram-black" alt="telegram"></a></li>
+            <li><a target="_blank" href="https://www.viber.com/"><img class="commercial__social-img" src="img/icons/icons.svg#viber-black" alt="viber"></a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="features__peanut-butter features" id="features__peanut-butter">
+    <div class="features__container">
+        <h2 class="features__peanut-title features__title">Каталог товарів</h2>
+        <div class="features__inner">
+
+            <div class="features__box" data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box"  data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+            
+            <div class="features__box" data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box" data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box" data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+
+            <div class="features__box" data-id="05">
+                <img class="features__box-img" src="img/penut-butter/peanut-butter.png" alt="product">
+                <h3 class="features__box__title">Просто Паста Кокосова</h3>
+                <div class="features__box-bottom">
+                    <p class="features__box-grams">110г</p>
+                    <h5 class="features__box-price">87</h5>
+                </div>
+                <button data-cart class="features__box-button">Додати в кошик</button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<aside class="adv">
+    <div class="adv__container">
+        <div class="adv__inner">
+            <div class="adv__image">
+                <img class="adv__image-photo" src="img/kitchen-board.png" alt="kitchen board">
+            </div>
+            <div class="adv__content">
+                <h3 class="adv__content-text">Ми потрясли фермерські угіддя нашої країни та відібрали найкращі фрукти. Для любителів м'яса - готуємо палички без оболонки з чистого фаршу філе та свіжомелених спецій. Наші продукти не містять жодних добавок. Тільки натуральний склад.</h3>
+                <ul class="adv__list">
+                    <li class="adv__list-item">Курячі палички приготовані з чистого філе, без добавок і консервантів (немає жиру).</li>
+                    <li class="adv__list-item">У 100г курочки - аж 300г м'яса - дуже легко наїсться (м'ясо висушене мінімум у 3 рази).</li>
+                    <li class="adv__list-item">Зручно навіть для дітей. Оскільки в процесі створення не використовується м'ясна оболонка.</li>
+                    <li class="adv__list-item">Фрукти ми висушуємо у 8-10 разів. В одній упаковці яблук на 100г - насправді аж кілограм свіжих яблук.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aside>
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img class="logo footer__logo-img" src="img/logo.svg" alt="logo">
+            </div>
+            <div class="footer__hand-made">
+                <img class="footer__hand-made-img" src="img/made-in-Ukraine.png" alt="Hand made Ukraine">
+            </div>
+            <div class="footer__partner">
+                <h3>Партнерство:</h3>
+                <h4>Просто Паста</h4>
+                <h4>snaXtime</h4>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Popup basket -->
+
+<div id="basket" class="popup">
+    <div class="form__body">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"></a>
+                
+                <!-- basket page -->
+<section class="basket">
+    <div class="basket__container">
+        <h2 class="basket__title">Ваш кошик</h2>
+        <div class="basket__inner">
+            <!-- Form -->
+            <form class="basket__form" id="order-form" action="#" method="get">
+                <h3 class="basket__form-title">Адреса доставки</h3>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" value="" required>
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="lastname">Прізвище</label>
+                    <input type="text" id="lastname" name="lastname" value="" required>
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="region">Область</label>
+                    <input type="text" id="region" name="region" value="" required>
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="city">Місто</label>
+                    <input type="text" id="city" name="city" value="" required>
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="post-officeNP">Відділення Нової Пошти</label>
+                    <input type="text" id="post-officeNP" name="post-officeNP" value="" required>
+                </div>
+                <h3 class="basket__form-title">Покупець</h3>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable required-field" for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" value="" required>
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable" for="">Передзвонити для підтвердження замовлення?</label>
+
+                    <div class="basket__form-radio">
+                        <label class="basket__form-lable" for="yesanswer">
+                            <input class="basket__real-radio" type="radio" checked id="yesanswer" name="callback"
+                                value="yesanswer">
+                            <span class="basket__custome-radio"></span>
+                            Так
+                        </label>
+                    </div>
+
+                    <div class="basket__form-radio">
+                        <label class="basket__form-lable" for="noanswer">
+                            <input class="basket__real-radio" type="radio" id="noanswer" name="callback"
+                                value="noanswer">
+                            <span class="basket__custome-radio"></span>
+                            Ні
+                        </label>
+                    </div>
+
+                </div>
+                <div class="basket__form-inner">
+                    <label class="basket__form-lable" for="email">Email</label>
+                    <input type="email" id="email" name="email" value="">
+                </div>
+                <h3 class="basket__form-title">Доставка</h3>
+                <label class="basket__form-lable" for="">При замовленні товару більше ніж на 600 грн. Доставка у відділення пошти - безкоштовна</label>
+                <h3 class="basket__form-title">Спосіб доставки</h3>
+
+                <div class="basket__form-radio">
+                    <label class="basket__form-lable" for="post-office">
+                        <input class="basket__real-radio" type="radio" checked id="post-office" name="shipping"
+                            value="post-office">
+                        <span class="basket__custome-radio"></span>
+                        Нова пошта: Доставка у відділення
+                    </label>
+                </div>
+
+                <div class="basket__form-radio">
+                    <label class="basket__form-lable" for="courier">
+                        <input class="basket__real-radio" type="radio" id="courier" name="shipping" value="courier">
+                        <span class="basket__custome-radio"></span>
+                        Нова пошта: Доставка кур'єром (за тарифами Нової Пошти)
+                    </label>
+                </div>
+
+                <h3 class="basket__form-title">Спосіб оплати</h3>
+
+                <div class="basket__form-radio">
+                    <label class="basket__form-lable" for="bank-card">
+                        <input class="basket__real-radio" type="radio" checked id="bank-card" name="payment"
+                            value="bank-card">
+                        <span class="basket__custome-radio"></span>
+                        Visa / Mastercard / Приват24 (Liqpay)
+                    </label>
+                </div>
+
+                <div class="basket__form-radio">
+                    <label class="basket__form-lable" for="delivery-payment">
+                        <input class="basket__real-radio" type="radio" id="delivery-payment" name="payment"
+                            value="delivery-payment">
+                        <span class="basket__custome-radio"></span>
+                        Оплата при отриманні
+                    </label>
+                </div>
+
+                <h3 class="basket__form-title">Коментарій</h3>
+                <textarea class="basket__form-textarea" name="commentary" id="commentary"
+                    placeholder="Коментарій"></textarea>
+
+                <button class="basket__form-button" type="submit">Оформити замовлення</button>
+            </form>
+            <!-- //Form -->
+            <div class="basket__products">
+                <div class="basket__products-box"><!-- Adding with JS --></div>
+                <div class="basket__products-empty" data-cart-empty>Кошик порожній</div>
+                <div class="basket__shipping-inner">
+                    <hr>
+                    <div class="basket__products-wrap">
+                        <h5 class="basket__products-shipping">Доставка:</h5>
+                        <h6 class="basket__shipping" data-cart-delivery>за тарифами Нової Пошти</h6>
+                    </div>
+                    <div class="basket__products-wrap">
+                        <h5 class="basket__products-result">Підсумок:</h5>
+                        <h6 class="basket__result">0</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //basket page -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Popup  basket-->
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
