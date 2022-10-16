@@ -176,3 +176,69 @@ $burger__mobile__background__menu__open: #1b3c2a;
       }
 }
 /* //Burger menu */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 50;
+    transition: all 0.8s ease 0s;
+    &__body {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    &__content {
+        max-width: 950px;
+        padding: 30px 5px;
+        background-color: #e5e5e5;
+        position: relative;
+        opacity: 0;
+        transform: translate(0px, -100%);
+        transition: all 0.8s ease 0s;
+    }
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.6;
+        transition: opacity .2s linear;
+        &:hover {
+            opacity: 1;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            left: 15px;
+            height: 15px;
+            width: 2px;
+            background-color: #000;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    &.open .popup__content {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}

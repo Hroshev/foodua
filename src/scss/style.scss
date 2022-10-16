@@ -5,25 +5,9 @@
 @import "../scss/base/global.scss";
 // Basic structure of the document
 @import "../scss/burger.scss";
-@import "../scss/header.scss";
-@import "../scss/main-page.scss";
-@import "../scss/footer.scss";
 /* basket page */
 @import "../scss/basket-page.scss";
 /* //basket page */
-
-//---Center Image---
-
-// position: absolute;
-// top: 50%;
-// left: 50%;
-// margin-right: -50%;
-// transform: translate(-50%, -50%);
-// background: url("@img") 50% 50%/cover no-repeat;
-
-//---Discoloration---
-
-// text{
-//   color: darken(#fff, 25%);
-//   color: lighten(#000, 25%);
-// }
+@import "../scss/header.scss";
+@import "../scss/main-page.scss";
+@import "../scss/footer.scss";

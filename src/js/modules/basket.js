@@ -35,25 +35,25 @@ function calcCartPriceAndbasket() {
   let totlaCount = 0;
 
   cartItems.forEach(function (item) {
-    const amountEl = item.querySelector('[data-counter]').innerText;
-    const priceEl = item.querySelector('.basket__products-price').innerText;
-    const currentPrice = Math.ceil(parseInt(amountEl) * parseInt(priceEl));
+    const amountEl = item.querySelector('[data-counter]');
+    const priceEl = item.querySelector('.basket__products-price');
+    const currentPrice = Math.ceil(parseInt(amountEl.textContent) * parseInt(priceEl.textContent));
     totalPrice += currentPrice;
-    totlaCount += parseInt(amountEl);
+    totlaCount += parseInt(amountEl.textContent);
   })
   //Корзина для подсчета количества товаров в корзине
-  basket.innerText = `Ваш кошик (${totlaCount})`;
+  basket.textContent = `Ваш кошик (${totlaCount})`;
 
   //Отображаем цену на странице
-  totalPriceEl.innerText = totalPrice;
+  totalPriceEl.textContent = totalPrice;
 
   //Указываем стоимость доставки
   if (totalPrice >= 600) {
     deliveryCost.classList.add('basket__shipping-free');
-    deliveryCost.innerText = 'безкоштовно';
+    deliveryCost.textContent = 'безкоштовно';
   } else {
     deliveryCost.classList.remove('basket__shipping-free');
-    deliveryCost.innerText = 'за тарифами Нової Пошти'; 
+    deliveryCost.textContent = 'за тарифами Нової Пошти'; 
   }
 }
 
@@ -113,7 +113,7 @@ window.addEventListener("click", function (event) {
     //Если товар есть в корзине
     if(itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter]');
-      counterElement.innerText++;
+      parseInt(counterElement.textContent++);
       //Пересчет общей стоимости товаров в корзине
       calcCartPriceAndbasket()
     } else {
